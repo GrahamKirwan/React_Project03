@@ -3,10 +3,18 @@ import Button from './Button';
 
 import './UserInput.css';
 
-const UserInput = () => {
+const UserInput = props => {
+
+    const formEventHandler = e => {
+        e.preventDefault();
+        let newUser = {name: e.target[0].value, age: parseInt(e.target[1].value)}
+        console.log(newUser)
+        props.inputHandler(newUser);
+    }
+
     return (
         <div>
-        <form>
+        <form onSubmit={formEventHandler}>
             <div>
                 <label>Username</label>
                 <input type="text"></input>
