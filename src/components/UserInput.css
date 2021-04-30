@@ -1,0 +1,25 @@
+form {
+    width: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+    transform: translateY(70px);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 18px;
+}

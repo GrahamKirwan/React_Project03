@@ -1,0 +1,9 @@
+.user-list {
+    width: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+    transform: translateY(70px);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
