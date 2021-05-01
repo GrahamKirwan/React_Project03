@@ -10,7 +10,8 @@ const UserInput = props => {
 
     const formEventHandler = e => {
         e.preventDefault();
-        let newUser = {name: e.target[0].value, age: parseInt(e.target[1].value)}
+        let newUser = {key: Math.random(), name: e.target[0].value, age: parseInt(e.target[1].value)}
+        if(newUser.name.length === 0 || !newUser.age ? props.inValidHandler : console.log('nice'))
         props.inputHandler(newUser);
         setUsernameValue('');
         setAgeValue('');
