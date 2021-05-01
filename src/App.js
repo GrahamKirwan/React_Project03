@@ -9,9 +9,9 @@ import './App.css';
 function App() {
 
   const [data, setData] = useState([
-    {name: 'Graham', age: 26 },
-    {name: 'Cathal', age: 28 },
-    {name: 'Cathal', age: 28 },
+    // {name: 'Graham', age: 26 },
+    // {name: 'Cathal', age: 28 },
+    // {name: 'Cathal', age: 28 },
   ]);
 
   const onInputSubmit = (newUser) => {
