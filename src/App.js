@@ -11,9 +11,15 @@ function App() {
 
   const [data, setData] = useState([]);
   const [inValid, setInValid] = useState(false);
+  const [age, setAge] = useState(1);
 
   const onInputSubmit = (newUser) => {
     setData([...data, newUser]);
+  }
+
+  const onModalClose = () => {
+    setInValid(false);
+    setAge(1);
   }
 
   
@@ -25,11 +31,16 @@ function App() {
 
   let modal = ('');
   if(inValid) {
-    modal = (<Modal></Modal>);
+    modal = (<Modal ageData={age} modalCloseHandler={onModalClose}></Modal>);
   }
 
-  const inValidInput = () => {
-    console.log('invalid from app.js')
+
+
+  const inValidInput = (age) => {
+    if(age < 0) {
+      setAge(age);
+    }
+    setInValid(true);
   }
  
   return (
