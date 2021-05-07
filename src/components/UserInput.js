@@ -32,7 +32,7 @@ const UserInput = props => {
                 <label>Age (Years)</label>
                 <input type="number" value={ageValue} onChange={updateAgeHandler}></input>
             </div>
-            <Button type="submit">Add New User</Button>
+            <Button type="submit">Add User</Button>
         </form>
         </div>
     );
